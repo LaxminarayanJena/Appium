@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    
+    <!-- <groups>
+        <run>
+            <include name="high" />
+        </run>
+    </groups> -->
+     
+    
+     
+     
+     <listeners>
+        <listener class-name="listeners.CustomListeners"></listener>
+        <listener class-name="listeners.ExtentReporterNG"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      
+    </listeners>
+    
+     
+  <test name="LoginTest">
+    <classes>
+      <class name="testNgLearning.LoginTest"/>
+    </classes>
+  </test> 
+  
+  
+  
+  
+  <test name="ValidateButtonTest">
+    <classes>
+      <class name="testNgLearning.validateButtonTest"/>
+    </classes>
+  </test> 
+  
+  
+  <test name="TestDependencies">
+    <classes>
+      <class name="testNgLearning.TestDependencies"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
