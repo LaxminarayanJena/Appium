@@ -1,0 +1,40 @@
+git config --list
+
+git init
+
+git add *.txt
+
+git commit -m "My first commit"
+
+git status
+
+
+-----------------------make change-------
+
+
+git add *.txt
+
+git commit -m "My second commit"
+
+git status
+
+
+
+-----------------generate key--------------
+
+$ ssh-keygen -t rsa
+
+
+key generated in /c/Users/C5249422/.ssh/id_rsa
+
+upload the key in github settings
+
+ssh -T git@github.com
+
+-------------------------------------------------------------------
+1)git init
+2)git status
+3)git add pom.xml
+4)git add src/
+5)git remote add origin git@github.com:LaxminarayanJena/Appium.git
+6)git push -u origin master
