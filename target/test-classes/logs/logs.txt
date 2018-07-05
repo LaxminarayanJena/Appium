@@ -1,0 +1,192 @@
+2016-12-09 09:28:28:206 - info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+2016-12-09 09:28:28:207 - info: Appium REST http interface listener started on 0.0.0.0:4723
+2016-12-09 09:28:28:210 - info: [debug] Non-default server args: {"log":"C:\\poltu\\java\\appiumlive\\appiumTesting\\src\\test\\resources\\logs\\logs.txt"}
+2016-12-09 09:28:28:210 - info: Console LogLevel: debug
+2016-12-09 09:28:28:210 - info: File LogLevel: debug
+2016-12-09 09:28:28:598 - info: --> GET /wd/hub/status {}
+2016-12-09 09:28:28:601 - info: [debug] Responding to client with success: {"status":0,"value":{"build":{"version":"1.4.16","revision":"ae6877eff263066b26328d457bd285c0cc62430d"}}}
+2016-12-09 09:28:28:619 - info: <-- GET /wd/hub/status 200 20.370 ms - 105 {"status":0,"value":{"build":{"version":"1.4.16","revision":"ae6877eff263066b26328d457bd285c0cc62430d"}}}
+2016-12-09 09:28:28:654 - info: --> POST /wd/hub/session {"desiredCapabilities":{"app":"C:\\Users\\C5249422\\Downloads\\selendroid.apk","platformName":"Android","deviceName":"Android"}}
+2016-12-09 09:28:28:655 - info: Client User-Agent string: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+2016-12-09 09:28:28:657 - info: [debug] No appActivity desired capability or server param. Parsing from apk.
+2016-12-09 09:28:28:658 - info: [debug] No appPackage desired capability or server param. Parsing from apk.
+2016-12-09 09:28:28:658 - info: [debug] Using local app from desired caps: C:\Users\C5249422\Downloads\selendroid.apk
+2016-12-09 09:28:28:659 - info: [debug] Creating new appium session 3af8af80-151c-49ad-8a10-e29180d9256f
+2016-12-09 09:28:28:660 - info: Starting android appium
+2016-12-09 09:28:28:661 - info: [debug] Getting Java version
+2016-12-09 09:28:28:751 - info: Java version is: 1.8.0_112
+2016-12-09 09:28:28:752 - info: [debug] Checking whether adb is present
+2016-12-09 09:28:28:753 - info: [debug] Using adb from C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe
+2016-12-09 09:28:28:753 - info: [debug] Parsing package and activity from app manifest
+2016-12-09 09:28:28:754 - info: [debug] Checking whether aapt is present
+2016-12-09 09:28:28:754 - info: [debug] Using aapt from C:\Users\C5249422\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe
+2016-12-09 09:28:28:754 - info: [debug] Extracting package and launch activity from manifest.
+2016-12-09 09:28:28:756 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe dump badging C:\Users\C5249422\Downloads\selendroid.apk
+2016-12-09 09:28:28:775 - info: [debug] badging package: io.selendroid.testapp
+2016-12-09 09:28:28:775 - info: [debug] badging act: io.selendroid.testapp.HomeScreenActivity
+2016-12-09 09:28:28:775 - info: [debug] Parsed package and activity are: io.selendroid.testapp/io.selendroid.testapp.HomeScreenActivity
+2016-12-09 09:28:28:775 - info: [debug] Using fast reset? true
+2016-12-09 09:28:28:776 - info: [debug] Preparing device for session
+2016-12-09 09:28:28:776 - info: [debug] Checking whether app is actually present
+2016-12-09 09:28:28:778 - info: Retrieving device
+2016-12-09 09:28:28:778 - info: [debug] Trying to find a connected android device
+2016-12-09 09:28:28:778 - info: [debug] Getting connected devices...
+2016-12-09 09:28:28:779 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe devices
+2016-12-09 09:28:28:809 - info: [debug] 1 device(s) connected
+2016-12-09 09:28:28:810 - info: Found device ZY222494FS
+2016-12-09 09:28:28:810 - info: [debug] Setting device id to ZY222494FS
+2016-12-09 09:28:28:810 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2016-12-09 09:28:28:811 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS wait-for-device
+2016-12-09 09:28:28:840 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "echo 'ready'"
+2016-12-09 09:28:28:884 - info: [debug] Starting logcat capture
+2016-12-09 09:28:28:935 - info: [debug] Getting device API level
+2016-12-09 09:28:28:935 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "getprop ro.build.version.sdk"
+2016-12-09 09:28:29:009 - info: [debug] Device is at API Level 23
+2016-12-09 09:28:29:010 - info: Device API level is: 23
+2016-12-09 09:28:29:011 - info: [debug] Extracting strings for language: default
+2016-12-09 09:28:29:013 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "getprop persist.sys.language"
+2016-12-09 09:28:29:081 - info: [debug] Current device persist.sys.language: 
+2016-12-09 09:28:29:082 - info: [debug] java -jar "C:\Program Files (x86)\Appium\node_modules\appium\node_modules\appium-adb\jars\appium_apk_tools.jar" "stringsFromApk" "C:\Users\C5249422\Downloads\selendroid.apk" "C:\Users\C5249422\AppData\Local\Temp\io.selendroid.testapp" 
+2016-12-09 09:28:29:523 - info: [debug] Reading strings from converted strings.json
+2016-12-09 09:28:29:528 - info: [debug] Setting language to default
+2016-12-09 09:28:29:528 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS push "C:\\Users\\C5249422\\AppData\\Local\\Temp\\io.selendroid.testapp\\strings.json" /data/local/tmp
+2016-12-09 09:28:29:566 - info: [debug] Checking whether aapt is present
+2016-12-09 09:28:29:567 - info: [debug] Using aapt from C:\Users\C5249422\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe
+2016-12-09 09:28:29:567 - info: [debug] Retrieving process from manifest.
+2016-12-09 09:28:29:568 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe dump xmltree C:\Users\C5249422\Downloads\selendroid.apk AndroidManifest.xml
+2016-12-09 09:28:29:589 - info: [debug] Set app process to: io.selendroid.testapp
+2016-12-09 09:28:29:589 - info: [debug] Not uninstalling app since server not started with --full-reset
+2016-12-09 09:28:29:590 - info: [debug] Checking app cert for C:\Users\C5249422\Downloads\selendroid.apk.
+2016-12-09 09:28:29:590 - info: [debug] executing cmd: java -jar "C:\Program Files (x86)\Appium\node_modules\appium\node_modules\appium-adb\jars\verify.jar" C:\Users\C5249422\Downloads\selendroid.apk
+2016-12-09 09:28:29:779 - info: [debug] App already signed.
+2016-12-09 09:28:29:779 - info: [debug] Zip-aligning C:\Users\C5249422\Downloads\selendroid.apk
+2016-12-09 09:28:29:779 - info: [debug] Checking whether zipalign is present
+2016-12-09 09:28:29:780 - info: [debug] Using zipalign from C:\Users\C5249422\AppData\Local\Android\sdk\build-tools\21.1.2\zipalign.exe
+2016-12-09 09:28:29:782 - info: [debug] Zip-aligning apk.
+2016-12-09 09:28:29:782 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\build-tools\21.1.2\zipalign.exe -f 4 C:\Users\C5249422\Downloads\selendroid.apk C:\Users\C5249422\AppData\Local\Temp\116119-10524-u9dgqe.mbcnvr6bt9\appium.tmp
+2016-12-09 09:28:29:815 - info: [debug] MD5 for app is d6d43218105a4e0ccabfb58bb04f24af
+2016-12-09 09:28:29:816 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "ls /data/local/tmp/d6d43218105a4e0ccabfb58bb04f24af.apk"
+2016-12-09 09:28:29:876 - info: [debug] Getting install status for io.selendroid.testapp
+2016-12-09 09:28:29:877 - info: [debug] Getting device API level
+2016-12-09 09:28:29:877 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "getprop ro.build.version.sdk"
+2016-12-09 09:28:29:939 - info: [debug] Device is at API Level 23
+2016-12-09 09:28:29:940 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "pm list packages -3 io.selendroid.testapp"
+2016-12-09 09:28:30:869 - info: [debug] App is installed
+2016-12-09 09:28:30:869 - info: App is already installed, resetting app
+2016-12-09 09:28:30:870 - info: [debug] Running fast reset (stop and clear)
+2016-12-09 09:28:30:871 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "am force-stop io.selendroid.testapp"
+2016-12-09 09:28:32:128 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "pm clear io.selendroid.testapp"
+2016-12-09 09:28:33:142 - info: [debug] Forwarding system:4724 to device:4724
+2016-12-09 09:28:33:143 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS forward tcp:4724 tcp:4724
+2016-12-09 09:28:33:210 - info: [debug] Pushing appium bootstrap to device...
+2016-12-09 09:28:33:211 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS push "C:\\Program Files (x86)\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2016-12-09 09:28:33:280 - info: [debug] Pushing settings apk to device...
+2016-12-09 09:28:33:281 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS install "C:\Program Files (x86)\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2016-12-09 09:28:35:047 - info: [debug] Pushing unlock helper app to device...
+2016-12-09 09:28:35:055 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS install "C:\Program Files (x86)\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2016-12-09 09:28:36:521 - info: Starting App
+2016-12-09 09:28:36:522 - info: [debug] Attempting to kill all 'uiautomator' processes
+2016-12-09 09:28:36:523 - info: [debug] Getting all processes with 'uiautomator'
+2016-12-09 09:28:36:524 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "ps 'uiautomator'"
+2016-12-09 09:28:36:658 - info: [debug] No matching processes found
+2016-12-09 09:28:36:658 - info: [debug] Running bootstrap
+2016-12-09 09:28:36:659 - info: [debug] spawning: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg io.selendroid.testapp -e disableAndroidWatchers false
+2016-12-09 09:28:37:599 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2016-12-09 09:28:37:599 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2016-12-09 09:28:37:600 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2016-12-09 09:28:37:601 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2016-12-09 09:28:37:602 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2016-12-09 09:28:37:602 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2016-12-09 09:28:37:603 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2016-12-09 09:28:37:603 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2016-12-09 09:28:37:628 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2016-12-09 09:28:37:630 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2016-12-09 09:28:37:630 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2016-12-09 09:28:37:631 - info: [debug] [BOOTSTRAP] [debug] json loading complete.
+2016-12-09 09:28:37:631 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2016-12-09 09:28:37:638 - info: [debug] Waking up device if it's not alive
+2016-12-09 09:28:37:638 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2016-12-09 09:28:37:640 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2016-12-09 09:28:37:641 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2016-12-09 09:28:37:643 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-09 09:28:37:643 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2016-12-09 09:28:37:645 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2016-12-09 09:28:37:647 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "dumpsys window"
+2016-12-09 09:28:37:724 - info: [debug] Screen already unlocked, continuing.
+2016-12-09 09:28:37:725 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2016-12-09 09:28:37:729 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2016-12-09 09:28:37:730 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-09 09:28:37:731 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2016-12-09 09:28:37:731 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data\/local\/tmp"}
+2016-12-09 09:28:37:732 - info: [debug] dataDir set to: /data/local/tmp
+2016-12-09 09:28:37:732 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2016-12-09 09:28:37:735 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2016-12-09 09:28:37:736 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-09 09:28:37:736 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2016-12-09 09:28:37:737 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+2016-12-09 09:28:37:738 - info: [debug] Getting device API level
+2016-12-09 09:28:37:739 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "getprop ro.build.version.sdk"
+2016-12-09 09:28:37:804 - info: [debug] Device is at API Level 23
+2016-12-09 09:28:37:806 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n io.selendroid.testapp/io.selendroid.testapp.HomeScreenActivity"
+2016-12-09 09:28:39:245 - info: [debug] Waiting for pkg "io.selendroid.testapp" and activity "io.selendroid.testapp.HomeScreenActivity" to be focused
+2016-12-09 09:28:39:249 - info: [debug] Getting focused package and activity
+2016-12-09 09:28:39:252 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "dumpsys window windows"
+2016-12-09 09:28:39:376 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "getprop ro.build.version.release"
+2016-12-09 09:28:39:465 - info: [debug] Device is at release version 6.0.1
+2016-12-09 09:28:39:466 - info: [debug] Device launched! Ready for commands
+2016-12-09 09:28:39:466 - info: [debug] Setting command timeout to the default of 60 secs
+2016-12-09 09:28:39:467 - info: [debug] Appium session started with sessionId 3af8af80-151c-49ad-8a10-e29180d9256f
+2016-12-09 09:28:39:471 - info: <-- POST /wd/hub/session 303 10817.346 ms - 74 
+2016-12-09 09:28:39:475 - info: --> GET /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f {}
+2016-12-09 09:28:39:478 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\C5249422\\Downloads\\selendroid.apk","platformName":"Android","deviceName":"Android"},"app":"C:\\Users\\C5249422\\Downloads\\selendroid.apk","platformName":"Android","deviceName":"ZY222494FS"},"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}
+2016-12-09 09:28:39:480 - info: <-- GET /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f 200 5.090 ms - 538 {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"C:\\Users\\C5249422\\Downloads\\selendroid.apk","platformName":"Android","deviceName":"Android"},"app":"C:\\Users\\C5249422\\Downloads\\selendroid.apk","platformName":"Android","deviceName":"ZY222494FS"},"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}
+2016-12-09 09:28:39:490 - info: --> POST /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f/element {"using":"id","value":"io.selendroid.testapp:id/my_text_field"}
+2016-12-09 09:28:39:493 - info: [debug] Waiting up to 0ms for condition
+2016-12-09 09:28:39:494 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"io.selendroid.testapp:id/my_text_field","context":"","multiple":false}]
+2016-12-09 09:28:39:499 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"io.selendroid.testapp:id/my_text_field","context":"","multiple":false}}
+2016-12-09 09:28:39:500 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-09 09:28:39:500 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-09 09:28:39:501 - info: [debug] [BOOTSTRAP] [debug] Finding io.selendroid.testapp:id/my_text_field using ID with the contextId:  multiple: false
+2016-12-09 09:28:39:501 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=io.selendroid.testapp:id/my_text_field]
+2016-12-09 09:28:39:816 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2016-12-09 09:28:39:818 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}
+2016-12-09 09:28:39:822 - info: <-- POST /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f/element 200 331.756 ms - 87 {"status":0,"value":{"ELEMENT":"1"},"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}
+2016-12-09 09:28:39:830 - info: --> POST /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f/element/1/value {"id":"1","value":["userd"]}
+2016-12-09 09:28:39:832 - info: [debug] Pushing command to appium work queue: ["element:setText",{"elementId":"1","text":"userd","replace":false}]
+2016-12-09 09:28:39:839 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"userd","replace":false}}
+2016-12-09 09:28:39:839 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-09 09:28:39:840 - info: [debug] [BOOTSTRAP] [debug] Got command action: setText
+2016-12-09 09:28:39:840 - info: [debug] [BOOTSTRAP] [debug] Using element passed in.
+2016-12-09 09:28:39:846 - info: [debug] [BOOTSTRAP] [debug] Attempting to clear using UiObject.clearText().
+2016-12-09 09:28:42:190 - info: [debug] [BOOTSTRAP] [debug] Sending plain text to element: userd
+2016-12-09 09:28:44:681 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2016-12-09 09:28:44:683 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}
+2016-12-09 09:28:44:685 - info: <-- POST /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f/element/1/value 200 4855.010 ms - 76 {"status":0,"value":true,"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}
+2016-12-09 09:28:44:698 - info: --> DELETE /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f {}
+2016-12-09 09:28:44:700 - info: Shutting down appium session
+2016-12-09 09:28:44:702 - info: [debug] Pressing the HOME button
+2016-12-09 09:28:44:703 - info: [debug] executing cmd: C:\Users\C5249422\AppData\Local\Android\sdk\platform-tools\adb.exe -s ZY222494FS shell "input keyevent 3"
+2016-12-09 09:28:45:907 - info: [debug] Stopping logcat capture
+2016-12-09 09:28:45:917 - info: [debug] Logcat terminated with code null, signal SIGTERM
+2016-12-09 09:28:45:923 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+2016-12-09 09:28:45:926 - info: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+2016-12-09 09:28:45:928 - info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+2016-12-09 09:28:45:929 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2016-12-09 09:28:45:929 - info: [debug] [BOOTSTRAP] [debug] Closed client connection
+2016-12-09 09:28:45:930 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2016-12-09 09:28:45:930 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.
+2016-12-09 09:28:45:930 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2016-12-09 09:28:45:931 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2016-12-09 09:28:45:933 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2016-12-09 09:28:45:934 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2016-12-09 09:28:45:935 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2016-12-09 09:28:45:938 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2016-12-09 09:28:45:938 - info: [debug] [UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.
+2016-12-09 09:28:45:939 - info: [debug] [UIAUTOMATOR STDOUT] Time: 8.367
+2016-12-09 09:28:45:939 - info: [debug] [UIAUTOMATOR STDOUT] OK (1 test)
+2016-12-09 09:28:45:939 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2016-12-09 09:28:45:967 - info: [debug] UiAutomator shut down normally
+2016-12-09 09:28:45:969 - info: [debug] Cleaning up android objects
+2016-12-09 09:28:45:970 - info: [debug] Cleaning up appium session
+2016-12-09 09:28:45:971 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}
+2016-12-09 09:28:45:972 - info: <-- DELETE /wd/hub/session/3af8af80-151c-49ad-8a10-e29180d9256f 200 1274.978 ms - 76 {"status":0,"value":null,"sessionId":"3af8af80-151c-49ad-8a10-e29180d9256f"}

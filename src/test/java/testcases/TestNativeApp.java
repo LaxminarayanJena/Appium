@@ -1,4 +1,4 @@
-package appiumTesting;
+package testcases;
 
 import io.appium.java_client.android.AndroidDriver;
 

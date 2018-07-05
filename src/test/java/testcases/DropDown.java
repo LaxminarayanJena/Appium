@@ -14,6 +14,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
 public class DropDown {
+	
+	//IOSElement,AndroidElemnt,MobileElemnt,WebElement
 
 	public static AndroidDriver<WebElement> driver;
 
@@ -21,10 +23,15 @@ public class DropDown {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
 		capabilities.setCapability("deviceName", "Android");
+		
+		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		driver.get("http://wikipedia.org");
 		WebElement dropdown=driver.findElement(By.id("searchLanguage"));
 		new Select(dropdown).selectByVisibleText("Galego");
+		
+		System.out.println("-------------------printing no of links ---------------------");
+		
 		List<WebElement> values= dropdown.findElements(By.tagName("option"));
 		System.out.println(values.size());
 		for(WebElement value : values)
