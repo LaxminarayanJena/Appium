@@ -27,3 +27,6 @@ emulator -avd kitkat
 
 
 adb install "D:\software\testing software\MOBILE TESTING\APKS\HTML5testWebView.apk"
+
+# AndroidStudio emulator
+![avd settings](https://user-images.githubusercontent.com/24494133/42304144-68bd9b46-8042-11e8-99a6-5cd42b342882.PNG)
