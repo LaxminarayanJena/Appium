@@ -12,8 +12,9 @@ Appium-selenium 3.0 API for Mobile Automation Testing
 dumpsys window windows | grep -E 'CurrentFocus'
 
 3)adb tcpip 5555
+
 4)adb connect 192.168.0.101
-(ip of wifi of mobile) 
+(*ip of wifi of mobile) 
 
 
 
