@@ -31,3 +31,5 @@ public class OneWebAPP {
 //C:\Program Files (x86)\Appium\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
 
 //C:\Program Files (x86)\Appium\resources\app\node_modules\appium\build\lib\main.js
+
+//"C:/Users/Poltu/AppData/Local/Android/sdk/tools/uiautomatorviewer"

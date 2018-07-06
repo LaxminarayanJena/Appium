@@ -42,6 +42,8 @@ public class FourTestNativeAppAndAppiumServiceBuilder {
 		log.debug("Application launched");
 		driver.findElementById("io.selendroid.testapp:id/my_text_field")
 				.sendKeys("hello");
+		driver.hideKeyboard();
+		
 
 		driver.quit();
 		log.debug("Application closed");

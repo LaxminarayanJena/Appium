@@ -23,7 +23,17 @@ public class ThreeTestNativeApp {
 		 capabilities.setCapability("deviceName", "Android");
 		 capabilities.setCapability("app", app.getAbsolutePath());
 		 driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-	
+		 
+		 driver.closeApp();
+		 driver.removeApp("io.selendroid.testapp");
+		 
+		 if(!driver.isAppInstalled("io.selendroid.testapp"))
+		 {
+			 driver.installApp(System.getProperty("user.dir")+"\\src\\test\\resources\\APKS\\selendroid-test-app-0.17.0.apk");
+			// driver.startActivity(appPackage, appActivity);
+		 }
+		 
+		 
 	
 		 driver.quit();
 	}

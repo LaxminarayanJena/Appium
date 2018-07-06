@@ -1,187 +1,224 @@
-2018-07-05 12:39:04:777 - info: [Appium] Welcome to Appium v1.8.1
-2018-07-05 12:39:04:798 - info: [Appium] Non-default server args:
-2018-07-05 12:39:04:798 - info: [Appium]   log: D:\Projects\Appium\src\test\resources\logs\logs.txt
-2018-07-05 12:39:05:064 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4723
-2018-07-05 12:39:05:689 - info: [HTTP] --> GET /wd/hub/status
-2018-07-05 12:39:05:689 - info: [HTTP] {}
-2018-07-05 12:39:05:689 - info: [debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
-2018-07-05 12:39:05:783 - info: [debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
-2018-07-05 12:39:05:816 - info: [HTTP] <-- GET /wd/hub/status 200 98 ms - 83
-2018-07-05 12:39:05:817 - info: [HTTP] 
-2018-07-05 12:39:08:075 - info: [HTTP] --> POST /wd/hub/session
-2018-07-05 12:39:08:083 - info: [HTTP] {"desiredCapabilities":{"app":"D:\\Software\\Testing Software\\MOBILE TESTING\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"Android"}}
-2018-07-05 12:39:08:083 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"D:\\Software\\Testing Software\\MOBILE TESTING\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"Android"},null,null]
-2018-07-05 12:39:08:084 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1530794348084 (18:09:08 GMT+0530 (India Standard Time))
-2018-07-05 12:39:08:084 - info: [Appium] Creating new AndroidDriver (v2.7.0) session
-2018-07-05 12:39:08:084 - info: [Appium] Capabilities:
-2018-07-05 12:39:08:084 - info: [Appium]   app: D:\Software\Testing Software\MOBILE TESTING\APKS\selendroid-test-app-0.17.0.apk
-2018-07-05 12:39:08:084 - info: [Appium]   platformName: Android
-2018-07-05 12:39:08:084 - info: [Appium]   deviceName: Android
-2018-07-05 12:39:08:084 - info: [debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"app":"D:\\Software\\Testi...
-2018-07-05 12:39:08:100 - info: [BaseDriver] Session created with session id: e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87
-2018-07-05 12:39:08:100 - info: [debug] [AndroidDriver] Getting Java version
-2018-07-05 12:39:08:788 - info: [AndroidDriver] Java version is: 1.8.0_172
-2018-07-05 12:39:08:788 - info: [ADB] Checking whether adb is present
-2018-07-05 12:39:08:788 - info: [ADB] Found 1 'build-tools' folders under 'C:\Users\Poltu\AppData\Local\Android\sdk' (newest first):
-2018-07-05 12:39:08:788 - info: [ADB]     C:/Users/Poltu/AppData/Local/Android/sdk/build-tools/21.1.2
-2018-07-05 12:39:08:788 - info: [ADB] Using adb.exe from C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe
-2018-07-05 12:39:08:788 - info: [AndroidDriver] Retrieving device list
-2018-07-05 12:39:08:788 - info: [debug] [ADB] Trying to find a connected android device
-2018-07-05 12:39:08:803 - info: [debug] [ADB] Getting connected devices...
-2018-07-05 12:39:08:960 - info: [debug] [ADB] 1 device(s) connected
-2018-07-05 12:39:08:960 - info: [AndroidDriver] Using device: 5203b75de26b14cb
-2018-07-05 12:39:08:960 - info: [debug] [ADB] Setting device id to 5203b75de26b14cb
-2018-07-05 12:39:09:101 - info: [BaseDriver] Using local app 'D:\Software\Testing Software\MOBILE TESTING\APKS\selendroid-test-app-0.17.0.apk'
-2018-07-05 12:39:09:116 - info: [debug] [AndroidDriver] Checking whether app is actually present
-2018-07-05 12:39:09:118 - info: [AndroidDriver] Starting Android session
-2018-07-05 12:39:09:118 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb wait-for-device'
-2018-07-05 12:39:09:149 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell echo ping'
-2018-07-05 12:39:09:227 - info: [debug] [AndroidDriver] Pushing settings apk to device...
-2018-07-05 12:39:09:227 - info: [debug] [ADB] Getting install status for io.appium.settings
-2018-07-05 12:39:09:227 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.appium.settings'
-2018-07-05 12:39:10:508 - info: [debug] [ADB] App is installed
-2018-07-05 12:39:10:515 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
-2018-07-05 12:39:10:515 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys package io.appium.settings'
-2018-07-05 12:39:10:657 - info: [ADB] Checking whether aapt is present
-2018-07-05 12:39:10:720 - info: [ADB] Using aapt.exe from C:\Users\Poltu\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe
-2018-07-05 12:39:11:078 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
-2018-07-05 12:39:11:078 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell ps'
-2018-07-05 12:39:11:250 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.build.version.sdk'
-2018-07-05 12:39:11:360 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 24
-2018-07-05 12:39:11:360 - info: [debug] [ADB] Device API level: 24
-2018-07-05 12:39:11:360 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
-2018-07-05 12:39:12:854 - info: [debug] [ADB] Device API level: 24
-2018-07-05 12:39:12:855 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell appops set io.appium.settings android\:mock_location allow'
-2018-07-05 12:39:12:934 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
-2018-07-05 12:39:12:934 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
-2018-07-05 12:39:12:934 - info: [debug] [Logcat] Starting logcat capture
-2018-07-05 12:39:12:997 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
-2018-07-05 12:39:12:997 - info: [debug] [ADB] Getting install status for io.appium.unlock
-2018-07-05 12:39:12:997 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.appium.unlock'
-2018-07-05 12:39:14:323 - info: [debug] [ADB] App is installed
-2018-07-05 12:39:14:330 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
-2018-07-05 12:39:14:330 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys package io.appium.unlock'
-2018-07-05 12:39:14:503 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
-2018-07-05 12:39:14:503 - info: [ADB] Getting device platform version
-2018-07-05 12:39:14:503 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.build.version.release'
-2018-07-05 12:39:14:628 - info: [debug] [ADB] Current device property 'ro.build.version.release': 7.0
-2018-07-05 12:39:14:628 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell wm size'
-2018-07-05 12:39:15:817 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.product.model'
-2018-07-05 12:39:15:944 - info: [debug] [ADB] Current device property 'ro.product.model': SM-G610F
-2018-07-05 12:39:15:944 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.product.manufacturer'
-2018-07-05 12:39:16:085 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': samsung
-2018-07-05 12:39:16:100 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
-2018-07-05 12:39:16:100 - info: [ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\emulator\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\tools\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\tools\bin\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\build-tools\21.1.2\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\Poltu\AppData\Local\Android\sdk'?
-2018-07-05 12:39:16:100 - info: [ADB] Extracting package and launch activity from manifest
-2018-07-05 12:39:16:319 - info: [ADB] Package name: 'io.selendroid.testapp'
-2018-07-05 12:39:16:319 - info: [ADB] Main activity name: 'io.selendroid.testapp.HomeScreenActivity'
-2018-07-05 12:39:16:319 - info: [debug] [AndroidDriver] Parsed package and activity are: io.selendroid.testapp/io.selendroid.testapp.HomeScreenActivity
-2018-07-05 12:39:16:319 - info: [debug] [ADB] Getting install status for io.selendroid.testapp
-2018-07-05 12:39:16:319 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.selendroid.testapp'
-2018-07-05 12:39:17:565 - info: [debug] [ADB] App is not installed
-2018-07-05 12:39:17:576 - info: [debug] [ADB] Getting install status for io.selendroid.testapp
-2018-07-05 12:39:17:576 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.selendroid.testapp'
-2018-07-05 12:39:18:781 - info: [debug] [ADB] App is not installed
-2018-07-05 12:39:18:788 - info: [debug] [ADB] App 'D:\Software\Testing Software\MOBILE TESTING\APKS\selendroid-test-app-0.17.0.apk' not installed. Installing
-2018-07-05 12:39:18:789 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb install 'D:\\Software\\Testing Software\\MOBILE TESTING\\APKS\\selendroid-test-app-0.17.0.apk''
-2018-07-05 12:39:21:917 - info: [debug] [ADB] Install command stdout: Success
-2018-07-05 12:39:21:921 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell rm -rf /data/local/tmp/strings.json'
-2018-07-05 12:39:22:031 - info: [debug] [AndroidDriver] Extracting strings from apk
-2018-07-05 12:39:22:031 - info: [debug] [AndroidDriver] D:\Software\Testing Software\MOBILE TESTING\APKS\selendroid-test-app-0.17.0.apk
-2018-07-05 12:39:22:031 - info: [debug] [AndroidDriver] null
-2018-07-05 12:39:22:031 - info: [debug] [AndroidDriver] C:\Users\Poltu\AppData\Local\Temp\io.selendroid.testapp
-2018-07-05 12:39:22:031 - info: [debug] [ADB] Extracting strings for language: default
-2018-07-05 12:39:22:062 - info: [ADB] Successfully extracted 15 strings from 'D:\Software\Testing Software\MOBILE TESTING\APKS\selendroid-test-app-0.17.0.apk' resources for '(default)' configuration
-2018-07-05 12:39:22:062 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb push C\:\\Users\\Poltu\\AppData\\Local\\Temp\\io.selendroid.testapp\\strings.json /data/local/tmp'
-2018-07-05 12:39:22:109 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
-2018-07-05 12:39:22:109 - info: [debug] [ADB] Forwarding system: 4724 to device: 4724
-2018-07-05 12:39:22:109 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb forward tcp\:4724 tcp\:4724'
-2018-07-05 12:39:22:266 - info: [debug] [UiAutomator] Starting UiAutomator
-2018-07-05 12:39:22:266 - info: [debug] [UiAutomator] Moving to state 'starting'
-2018-07-05 12:39:22:266 - info: [debug] [UiAutomator] Parsing uiautomator jar
-2018-07-05 12:39:22:266 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
-2018-07-05 12:39:22:266 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb push 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'
-2018-07-05 12:39:22:344 - info: [debug] [ADB] Attempting to kill all uiautomator processes
-2018-07-05 12:39:22:344 - info: [debug] [ADB] Getting all processes with uiautomator
-2018-07-05 12:39:22:344 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell ps'
-2018-07-05 12:39:22:508 - info: [ADB] No uiautomator process found to kill, continuing...
-2018-07-05 12:39:22:508 - info: [debug] [UiAutomator] Starting UIAutomator
-2018-07-05 12:39:22:508 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","5203b75de26b14cb","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","io.selendroid.testapp","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
-2018-07-05 12:39:23:899 - info: [debug] [UiAutomator] Moving to state 'online'
-2018-07-05 12:39:23:915 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
-2018-07-05 12:39:23:915 - info: [AndroidBootstrap] Android bootstrap socket is now connected
-2018-07-05 12:39:23:915 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys window'
-2018-07-05 12:39:23:915 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
-2018-07-05 12:39:24:009 - info: [AndroidDriver] Screen already unlocked, doing nothing
-2018-07-05 12:39:24:009 - info: [debug] [ADB] Device API level: 24
-2018-07-05 12:39:24:009 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am start -W -n io.selendroid.testapp/io.selendroid.testapp.HomeScreenActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
-2018-07-05 12:39:26:073 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'io.selendroid.testapp' and activity: 'io.selendroid.testapp.HomeScreenActivity' to be focused
-2018-07-05 12:39:26:090 - info: [debug] [ADB] Possible activities, to be checked: 'io.selendroid.testapp.HomeScreenActivity', 'io.selendroid.testapp.io.selendroid.testapp.HomeScreenActivity'
-2018-07-05 12:39:26:090 - info: [debug] [ADB] Getting focused package and activity
-2018-07-05 12:39:26:090 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys window windows'
-2018-07-05 12:39:26:200 - info: [debug] [ADB] Found package: 'io.selendroid.testapp' and fully qualified activity name : 'io.selendroid.testapp.HomeScreenActivity'
-2018-07-05 12:39:26:200 - info: [Appium] New AndroidDriver session created successfully, session e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87 added to master session list
-2018-07-05 12:39:26:200 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1530794366200 (18:09:26 GMT+0530 (India Standard Time))
-2018-07-05 12:39:26:200 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"D:\\Software\\Testing Software\\MOBILE TESTING\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"Android"},"app":"D:\\Software\\Testing Software\\MOBILE TESTING\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"5203b75de26b14cb","deviceUDID":"5203b75de26b14cb","platformVersion":"7.0","deviceScreenSize":"1080x1920","deviceModel":"SM-G610F","deviceManufacturer":"samsung","appPackage":"io.selendroid.testapp","appWaitPackage":"io.selendroid.testapp","appActivity":"io.selendroid.testapp.HomeScreenActivity","appWaitActivity":"io.selendroid.testapp.HomeScreenActivity"}
-2018-07-05 12:39:26:200 - info: [HTTP] <-- POST /wd/hub/session 200 18129 ms - 909
-2018-07-05 12:39:26:200 - info: [HTTP] 
-2018-07-05 12:39:26:325 - info: [HTTP] --> POST /wd/hub/session/e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87/element
-2018-07-05 12:39:26:325 - info: [HTTP] {"using":"id","value":"io.selendroid.testapp:id/my_text_field"}
-2018-07-05 12:39:26:325 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","io.selendroid.testapp:id/my_text_field","e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87"]
-2018-07-05 12:39:26:340 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2018-07-05 12:39:26:356 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
-2018-07-05 12:39:26:356 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"io.selendroid.testapp:id/my_text_field","context":"","multiple":false}}
-2018-07-05 12:39:26:356 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"io.selendroid.testapp:id/my_text_field","context":"","multiple":false}}
-2018-07-05 12:39:26:356 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2018-07-05 12:39:26:356 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2018-07-05 12:39:26:356 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'io.selendroid.testapp:id/my_text_field' using 'ID' with the contextId: '' multiple: false
-2018-07-05 12:39:26:356 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=io.selendroid.testapp:id/my_text_field]
-2018-07-05 12:39:26:533 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-05 12:39:26:533 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
-2018-07-05 12:39:26:533 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
-2018-07-05 12:39:26:533 - info: [HTTP] <-- POST /wd/hub/session/e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87/element 200 211 ms - 87
-2018-07-05 12:39:26:533 - info: [HTTP] 
-2018-07-05 12:39:26:580 - info: [HTTP] --> POST /wd/hub/session/e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87/element/1/value
-2018-07-05 12:39:26:580 - info: [HTTP] {"id":"1","value":["hello"]}
-2018-07-05 12:39:26:580 - info: [debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["hello"],"1","e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87"]
-2018-07-05 12:39:26:580 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"hello","replace":false}}
-2018-07-05 12:39:26:580 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"hello","replace":false}}
-2018-07-05 12:39:26:580 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2018-07-05 12:39:26:580 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
-2018-07-05 12:39:26:580 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 1
-2018-07-05 12:39:26:596 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
-2018-07-05 12:39:29:220 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: hello
-2018-07-05 12:39:31:754 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-05 12:39:31:769 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
-2018-07-05 12:39:31:769 - info: [debug] [MJSONWP] Responding to client with driver.setValue() result: true
-2018-07-05 12:39:31:769 - info: [HTTP] <-- POST /wd/hub/session/e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87/element/1/value 200 5189 ms - 76
-2018-07-05 12:39:31:769 - info: [HTTP] 
-2018-07-05 12:39:31:785 - info: [HTTP] --> DELETE /wd/hub/session/e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87
-2018-07-05 12:39:31:785 - info: [HTTP] {}
-2018-07-05 12:39:31:785 - info: [debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87"]
-2018-07-05 12:39:31:785 - info: [debug] [BaseDriver] Event 'quitSessionRequested' logged at 1530794371785 (18:09:31 GMT+0530 (India Standard Time))
-2018-07-05 12:39:31:785 - info: [Appium] Removing session e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87 from our master session list
-2018-07-05 12:39:31:785 - info: [debug] [AndroidDriver] Shutting down Android driver
-2018-07-05 12:39:31:785 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am force-stop io.selendroid.testapp'
-2018-07-05 12:39:33:160 - info: [debug] [ADB] Pressing the HOME button
-2018-07-05 12:39:33:174 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell input keyevent 3'
-2018-07-05 12:39:34:418 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
-2018-07-05 12:39:34:427 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-05 12:39:34:427 - info: [debug] [UiAutomator] Shutting down UiAutomator
-2018-07-05 12:39:34:427 - info: [debug] [UiAutomator] Moving to state 'stopping'
-2018-07-05 12:39:34:427 - info: [debug] [UiAutomator] UiAutomator shut down normally
-2018-07-05 12:39:34:427 - info: [debug] [UiAutomator] Moving to state 'stopped'
-2018-07-05 12:39:34:427 - info: [debug] [ADB] Attempting to kill all uiautomator processes
-2018-07-05 12:39:34:427 - info: [debug] [ADB] Getting all processes with uiautomator
-2018-07-05 12:39:34:427 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell ps'
-2018-07-05 12:39:34:614 - info: [ADB] No uiautomator process found to kill, continuing...
-2018-07-05 12:39:34:614 - info: [debug] [UiAutomator] Moving to state 'stopped'
-2018-07-05 12:39:34:614 - info: [debug] [Logcat] Stopping logcat capture
-2018-07-05 12:39:34:614 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am force-stop io.appium.unlock'
-2018-07-05 12:39:35:834 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
-2018-07-05 12:39:35:834 - info: [debug] [BaseDriver] Event 'quitSessionFinished' logged at 1530794375834 (18:09:35 GMT+0530 (India Standard Time))
-2018-07-05 12:39:35:834 - info: [debug] [MJSONWP] Received response: null
-2018-07-05 12:39:35:834 - info: [debug] [MJSONWP] But deleting session, so not returning
-2018-07-05 12:39:35:834 - info: [debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
-2018-07-05 12:39:35:834 - info: [HTTP] <-- DELETE /wd/hub/session/e0cb50a9-f7c1-4dd1-a95d-9b68e8f3ef87 200 4057 ms - 76
-2018-07-05 12:39:35:834 - info: [HTTP] 
+2018-07-05 18:10:59:313 - info: [Appium] Welcome to Appium v1.8.1
+2018-07-05 18:10:59:316 - info: [Appium] Non-default server args:
+2018-07-05 18:10:59:317 - info: [Appium]   log: D:\Projects\Appium\src\test\resources\logs\logs.txt
+2018-07-05 18:10:59:370 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2018-07-05 18:10:59:905 - info: [HTTP] --> GET /wd/hub/status
+2018-07-05 18:10:59:906 - info: [HTTP] {}
+2018-07-05 18:10:59:910 - info: [debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+2018-07-05 18:10:59:960 - info: [debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
+2018-07-05 18:10:59:980 - info: [HTTP] <-- GET /wd/hub/status 200 59 ms - 83
+2018-07-05 18:10:59:980 - info: [HTTP] 
+2018-07-05 18:11:01:239 - info: [HTTP] --> POST /wd/hub/session
+2018-07-05 18:11:01:239 - info: [HTTP] {"desiredCapabilities":{"app":"D:\\Projects\\Appium\\src\\test\\resources\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"Android"}}
+2018-07-05 18:11:01:240 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"D:\\Projects\\Appium\\src\\test\\resources\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"Android"},null,null]
+2018-07-05 18:11:01:242 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1530814261241 (23:41:01 GMT+0530 (India Standard Time))
+2018-07-05 18:11:01:247 - info: [Appium] Creating new AndroidDriver (v2.7.0) session
+2018-07-05 18:11:01:247 - info: [Appium] Capabilities:
+2018-07-05 18:11:01:247 - info: [Appium]   app: D:\Projects\Appium\src\test\resources\APKS\selendroid-test-app-0.17.0.apk
+2018-07-05 18:11:01:247 - info: [Appium]   platformName: Android
+2018-07-05 18:11:01:247 - info: [Appium]   deviceName: Android
+2018-07-05 18:11:01:255 - info: [debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"app":"D:\\Projects\\Appiu...
+2018-07-05 18:11:01:263 - info: [BaseDriver] Session created with session id: b0632b85-7a66-4a09-ad76-6a0a8f4aaabc
+2018-07-05 18:11:01:264 - info: [debug] [AndroidDriver] Getting Java version
+2018-07-05 18:11:01:539 - info: [AndroidDriver] Java version is: 1.8.0_172
+2018-07-05 18:11:01:542 - info: [ADB] Checking whether adb is present
+2018-07-05 18:11:01:549 - info: [ADB] Found 1 'build-tools' folders under 'C:\Users\Poltu\AppData\Local\Android\sdk' (newest first):
+2018-07-05 18:11:01:550 - info: [ADB]     C:/Users/Poltu/AppData/Local/Android/sdk/build-tools/21.1.2
+2018-07-05 18:11:01:551 - info: [ADB] Using adb.exe from C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe
+2018-07-05 18:11:01:551 - info: [AndroidDriver] Retrieving device list
+2018-07-05 18:11:01:552 - info: [debug] [ADB] Trying to find a connected android device
+2018-07-05 18:11:01:553 - info: [debug] [ADB] Getting connected devices...
+2018-07-05 18:11:01:577 - info: [debug] [ADB] 1 device(s) connected
+2018-07-05 18:11:01:578 - info: [AndroidDriver] Using device: 5203b75de26b14cb
+2018-07-05 18:11:01:579 - info: [debug] [ADB] Setting device id to 5203b75de26b14cb
+2018-07-05 18:11:01:586 - info: [BaseDriver] Using local app 'D:\Projects\Appium\src\test\resources\APKS\selendroid-test-app-0.17.0.apk'
+2018-07-05 18:11:01:587 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-07-05 18:11:01:588 - info: [AndroidDriver] Starting Android session
+2018-07-05 18:11:01:591 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb wait-for-device'
+2018-07-05 18:11:01:619 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell echo ping'
+2018-07-05 18:11:01:687 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-07-05 18:11:01:692 - info: [debug] [ADB] Getting install status for io.appium.settings
+2018-07-05 18:11:01:693 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.appium.settings'
+2018-07-05 18:11:02:982 - info: [debug] [ADB] App is installed
+2018-07-05 18:11:02:983 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2018-07-05 18:11:02:984 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys package io.appium.settings'
+2018-07-05 18:11:03:065 - info: [ADB] Checking whether aapt is present
+2018-07-05 18:11:03:068 - info: [ADB] Using aapt.exe from C:\Users\Poltu\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe
+2018-07-05 18:11:03:081 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2018-07-05 18:11:03:082 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell ps'
+2018-07-05 18:11:03:274 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2018-07-05 18:11:03:276 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.build.version.sdk'
+2018-07-05 18:11:03:419 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 24
+2018-07-05 18:11:03:420 - info: [debug] [ADB] Device API level: 24
+2018-07-05 18:11:03:420 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell appops set io.appium.settings android\:mock_location allow'
+2018-07-05 18:11:03:534 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2018-07-05 18:11:03:535 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2018-07-05 18:11:03:537 - info: [debug] [Logcat] Starting logcat capture
+2018-07-05 18:11:03:599 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-07-05 18:11:03:600 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2018-07-05 18:11:03:600 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.appium.unlock'
+2018-07-05 18:11:04:967 - info: [debug] [ADB] App is installed
+2018-07-05 18:11:04:968 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2018-07-05 18:11:04:968 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys package io.appium.unlock'
+2018-07-05 18:11:05:086 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2018-07-05 18:11:05:087 - info: [ADB] Getting device platform version
+2018-07-05 18:11:05:088 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.build.version.release'
+2018-07-05 18:11:05:203 - info: [debug] [ADB] Current device property 'ro.build.version.release': 7.0
+2018-07-05 18:11:05:204 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell wm size'
+2018-07-05 18:11:06:387 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.product.model'
+2018-07-05 18:11:06:501 - info: [debug] [ADB] Current device property 'ro.product.model': SM-G610F
+2018-07-05 18:11:06:502 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell getprop ro.product.manufacturer'
+2018-07-05 18:11:06:636 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': samsung
+2018-07-05 18:11:06:637 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
+2018-07-05 18:11:06:641 - info: [ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\emulator\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\tools\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\tools\bin\apkanalyzer.bat,C:\Users\Poltu\AppData\Local\Android\sdk\build-tools\21.1.2\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\Poltu\AppData\Local\Android\sdk'?
+2018-07-05 18:11:06:642 - info: [ADB] Extracting package and launch activity from manifest
+2018-07-05 18:11:06:658 - info: [ADB] Package name: 'io.selendroid.testapp'
+2018-07-05 18:11:06:659 - info: [ADB] Main activity name: 'io.selendroid.testapp.HomeScreenActivity'
+2018-07-05 18:11:06:659 - info: [debug] [AndroidDriver] Parsed package and activity are: io.selendroid.testapp/io.selendroid.testapp.HomeScreenActivity
+2018-07-05 18:11:06:660 - info: [debug] [ADB] Getting install status for io.selendroid.testapp
+2018-07-05 18:11:06:660 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.selendroid.testapp'
+2018-07-05 18:11:07:916 - info: [debug] [ADB] App is installed
+2018-07-05 18:11:07:917 - info: [debug] [ADB] Getting install status for io.selendroid.testapp
+2018-07-05 18:11:07:918 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.selendroid.testapp'
+2018-07-05 18:11:09:192 - info: [debug] [ADB] App is installed
+2018-07-05 18:11:09:193 - info: [debug] [ADB] Getting package info for 'io.selendroid.testapp'
+2018-07-05 18:11:09:194 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys package io.selendroid.testapp'
+2018-07-05 18:11:09:320 - info: [debug] [ADB] The installed 'io.selendroid.testapp' package does not require upgrade ('0.17.0' >= '0.17.0')
+2018-07-05 18:11:09:320 - info: [AndroidDriver] Performing fast reset on 'io.selendroid.testapp'
+2018-07-05 18:11:09:321 - info: [debug] [ADB] Getting install status for io.selendroid.testapp
+2018-07-05 18:11:09:321 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm list packages io.selendroid.testapp'
+2018-07-05 18:11:10:598 - info: [debug] [ADB] App is installed
+2018-07-05 18:11:10:599 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am force-stop io.selendroid.testapp'
+2018-07-05 18:11:11:751 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell pm clear io.selendroid.testapp'
+2018-07-05 18:11:12:910 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'io.selendroid.testapp' application (stop and clear)
+2018-07-05 18:11:12:911 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell rm -rf /data/local/tmp/strings.json'
+2018-07-05 18:11:13:029 - info: [debug] [AndroidDriver] Extracting strings from apk
+2018-07-05 18:11:13:029 - info: [debug] [AndroidDriver] D:\Projects\Appium\src\test\resources\APKS\selendroid-test-app-0.17.0.apk
+2018-07-05 18:11:13:029 - info: [debug] [AndroidDriver] null
+2018-07-05 18:11:13:029 - info: [debug] [AndroidDriver] C:\Users\Poltu\AppData\Local\Temp\io.selendroid.testapp
+2018-07-05 18:11:13:031 - info: [debug] [ADB] Extracting strings for language: default
+2018-07-05 18:11:13:052 - info: [ADB] Successfully extracted 15 strings from 'D:\Projects\Appium\src\test\resources\APKS\selendroid-test-app-0.17.0.apk' resources for '(default)' configuration
+2018-07-05 18:11:13:056 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb push C\:\\Users\\Poltu\\AppData\\Local\\Temp\\io.selendroid.testapp\\strings.json /data/local/tmp'
+2018-07-05 18:11:13:090 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-07-05 18:11:13:099 - info: [debug] [ADB] Forwarding system: 4724 to device: 4724
+2018-07-05 18:11:13:099 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb forward tcp\:4724 tcp\:4724'
+2018-07-05 18:11:13:124 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-07-05 18:11:13:125 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-07-05 18:11:13:126 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-07-05 18:11:13:126 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-07-05 18:11:13:127 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb push 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'
+2018-07-05 18:11:13:164 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-07-05 18:11:13:165 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-07-05 18:11:13:165 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell ps'
+2018-07-05 18:11:13:339 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-07-05 18:11:13:339 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-07-05 18:11:13:340 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","5203b75de26b14cb","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","io.selendroid.testapp","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-07-05 18:11:14:555 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-07-05 18:11:14:559 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Loading json...
+2018-07-05 18:11:14:560 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+2018-07-05 18:11:14:561 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2018-07-05 18:11:14:581 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-07-05 18:11:14:584 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys window'
+2018-07-05 18:11:14:587 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-07-05 18:11:14:706 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-07-05 18:11:14:708 - info: [debug] [ADB] Device API level: 24
+2018-07-05 18:11:14:710 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am start -W -n io.selendroid.testapp/io.selendroid.testapp.HomeScreenActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2018-07-05 18:11:16:618 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'io.selendroid.testapp' and activity: 'io.selendroid.testapp.HomeScreenActivity' to be focused
+2018-07-05 18:11:16:619 - info: [debug] [ADB] Possible activities, to be checked: 'io.selendroid.testapp.HomeScreenActivity', 'io.selendroid.testapp.io.selendroid.testapp.HomeScreenActivity'
+2018-07-05 18:11:16:622 - info: [debug] [ADB] Getting focused package and activity
+2018-07-05 18:11:16:623 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys window windows'
+2018-07-05 18:11:16:703 - info: [debug] [ADB] Found package: 'io.selendroid.testapp' and fully qualified activity name : 'io.selendroid.testapp.HomeScreenActivity'
+2018-07-05 18:11:16:705 - info: [Appium] New AndroidDriver session created successfully, session b0632b85-7a66-4a09-ad76-6a0a8f4aaabc added to master session list
+2018-07-05 18:11:16:706 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1530814276706 (23:41:16 GMT+0530 (India Standard Time))
+2018-07-05 18:11:16:707 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"D:\\Projects\\Appium\\src\\test\\resources\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"Android"},"app":"D:\\Projects\\Appium\\src\\test\\resources\\APKS\\selendroid-test-app-0.17.0.apk","platformName":"Android","deviceName":"5203b75de26b14cb","deviceUDID":"5203b75de26b14cb","platformVersion":"7.0","deviceScreenSize":"1080x1920","deviceModel":"SM-G610F","deviceManufacturer":"samsung","appPackage":"io.selendroid.testapp","appWaitPackage":"io.selendroid.testapp","appActivity":"io.selendroid.testapp.HomeScreenActivity","appWaitActivity":"io.selendroid.testapp.HomeScreenActivity"}
+2018-07-05 18:11:16:708 - info: [HTTP] <-- POST /wd/hub/session 200 15469 ms - 901
+2018-07-05 18:11:16:708 - info: [HTTP] 
+2018-07-05 18:11:16:742 - info: [HTTP] --> POST /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc/element
+2018-07-05 18:11:16:742 - info: [HTTP] {"using":"id","value":"io.selendroid.testapp:id/my_text_field"}
+2018-07-05 18:11:16:744 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","io.selendroid.testapp:id/my_text_field","b0632b85-7a66-4a09-ad76-6a0a8f4aaabc"]
+2018-07-05 18:11:16:751 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-07-05 18:11:16:752 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-07-05 18:11:16:754 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"io.selendroid.testapp:id/my_text_field","context":"","multiple":false}}
+2018-07-05 18:11:16:758 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"io.selendroid.testapp:id/my_text_field","context":"","multiple":false}}
+2018-07-05 18:11:16:759 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-05 18:11:16:759 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-07-05 18:11:16:759 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'io.selendroid.testapp:id/my_text_field' using 'ID' with the contextId: '' multiple: false
+2018-07-05 18:11:16:759 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=io.selendroid.testapp:id/my_text_field]
+2018-07-05 18:11:17:085 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2018-07-05 18:11:17:087 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-05 18:11:17:088 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+2018-07-05 18:11:17:091 - info: [HTTP] <-- POST /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc/element 200 347 ms - 87
+2018-07-05 18:11:17:091 - info: [HTTP] 
+2018-07-05 18:11:17:101 - info: [HTTP] --> POST /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc/element/1/value
+2018-07-05 18:11:17:101 - info: [HTTP] {"id":"1","value":["hello"]}
+2018-07-05 18:11:17:102 - info: [debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["hello"],"1","b0632b85-7a66-4a09-ad76-6a0a8f4aaabc"]
+2018-07-05 18:11:17:105 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"hello","replace":false}}
+2018-07-05 18:11:17:108 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"1","text":"hello","replace":false}}
+2018-07-05 18:11:17:108 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-05 18:11:17:109 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+2018-07-05 18:11:17:109 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 1
+2018-07-05 18:11:17:117 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+2018-07-05 18:11:20:147 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: hello
+2018-07-05 18:11:22:737 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-05 18:11:22:738 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2018-07-05 18:11:22:739 - info: [debug] [MJSONWP] Responding to client with driver.setValue() result: true
+2018-07-05 18:11:22:740 - info: [HTTP] <-- POST /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc/element/1/value 200 5640 ms - 76
+2018-07-05 18:11:22:741 - info: [HTTP] 
+2018-07-05 18:11:22:748 - info: [HTTP] --> POST /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc/appium/device/hide_keyboard
+2018-07-05 18:11:22:748 - info: [HTTP] {}
+2018-07-05 18:11:22:751 - info: [debug] [MJSONWP] Calling AppiumDriver.hideKeyboard() with args: [null,null,null,null,"b0632b85-7a66-4a09-ad76-6a0a8f4aaabc"]
+2018-07-05 18:11:22:753 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell dumpsys input_method'
+2018-07-05 18:11:22:854 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressBack","params":{}}
+2018-07-05 18:11:22:857 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressBack","params":{}}
+2018-07-05 18:11:22:857 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-05 18:11:22:857 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressBack
+2018-07-05 18:11:24:247 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-05 18:11:24:249 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2018-07-05 18:11:24:250 - info: [debug] [MJSONWP] Responding to client with driver.hideKeyboard() result: true
+2018-07-05 18:11:24:251 - info: [HTTP] <-- POST /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc/appium/device/hide_keyboard 200 1504 ms - 76
+2018-07-05 18:11:24:252 - info: [HTTP] 
+2018-07-05 18:11:24:256 - info: [HTTP] --> DELETE /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc
+2018-07-05 18:11:24:256 - info: [HTTP] {}
+2018-07-05 18:11:24:257 - info: [debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["b0632b85-7a66-4a09-ad76-6a0a8f4aaabc"]
+2018-07-05 18:11:24:257 - info: [debug] [BaseDriver] Event 'quitSessionRequested' logged at 1530814284257 (23:41:24 GMT+0530 (India Standard Time))
+2018-07-05 18:11:24:258 - info: [Appium] Removing session b0632b85-7a66-4a09-ad76-6a0a8f4aaabc from our master session list
+2018-07-05 18:11:24:260 - info: [debug] [AndroidDriver] Shutting down Android driver
+2018-07-05 18:11:24:261 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am force-stop io.selendroid.testapp'
+2018-07-05 18:11:25:529 - info: [debug] [ADB] Pressing the HOME button
+2018-07-05 18:11:25:529 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell input keyevent 3'
+2018-07-05 18:11:26:716 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+2018-07-05 18:11:26:719 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-05 18:11:26:720 - info: [debug] [UiAutomator] Shutting down UiAutomator
+2018-07-05 18:11:26:721 - info: [debug] [UiAutomator] Moving to state 'stopping'
+2018-07-05 18:11:26:724 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+2018-07-05 18:11:26:724 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+2018-07-05 18:11:26:725 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2018-07-05 18:11:26:725 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+2018-07-05 18:11:26:725 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-07-05 18:11:26:726 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+2018-07-05 18:11:26:726 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-07-05 18:11:26:727 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-07-05 18:11:26:727 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-07-05 18:11:26:727 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-07-05 18:11:26:728 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2018-07-05 18:11:26:728 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-07-05 18:11:26:728 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+2018-07-05 18:11:26:729 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 12.246
+2018-07-05 18:11:26:729 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+2018-07-05 18:11:26:729 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2018-07-05 18:11:26:731 - info: [debug] [UiAutomator] UiAutomator shut down normally
+2018-07-05 18:11:26:732 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-07-05 18:11:26:733 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-07-05 18:11:26:733 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-07-05 18:11:26:734 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell ps'
+2018-07-05 18:11:26:948 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-07-05 18:11:26:949 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-07-05 18:11:26:950 - info: [debug] [Logcat] Stopping logcat capture
+2018-07-05 18:11:26:954 - info: [debug] [ADB] Running 'C:\Users\Poltu\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s 5203b75de26b14cb shell am force-stop io.appium.unlock'
+2018-07-05 18:11:28:136 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+2018-07-05 18:11:28:137 - info: [debug] [BaseDriver] Event 'quitSessionFinished' logged at 1530814288137 (23:41:28 GMT+0530 (India Standard Time))
+2018-07-05 18:11:28:137 - info: [debug] [MJSONWP] Received response: null
+2018-07-05 18:11:28:138 - info: [debug] [MJSONWP] But deleting session, so not returning
+2018-07-05 18:11:28:138 - info: [debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+2018-07-05 18:11:28:139 - info: [HTTP] <-- DELETE /wd/hub/session/b0632b85-7a66-4a09-ad76-6a0a8f4aaabc 200 3883 ms - 76
+2018-07-05 18:11:28:140 - info: [HTTP] 

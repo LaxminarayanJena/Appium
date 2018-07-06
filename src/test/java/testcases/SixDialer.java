@@ -12,7 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Dialer {
+public class SixDialer {
 
 	public static AndroidDriver<MobileElement> driver;
 
@@ -23,18 +23,20 @@ public class Dialer {
 		
 		
 		 capabilities.setCapability("deviceName", "Android");
-		 capabilities.setCapability("appPackage", "com.truecaller");
-		 capabilities.setCapability("appActivity", "com.truecaller.DialerActivityAlias");
+		 capabilities.setCapability("appPackage", "com.samsung.android.contacts");
+		 capabilities.setCapability("appActivity", "com.android.dialer.DialtactsActivity");
 		 
+		
+		
+		 // "C:/Users/Poltu/AppData/Local/Android/sdk/tools/uiautomatorviewer"
+		
 		 
 		 driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		 driver.findElement(By.xpath("//*[@class='android.view.View' and @index='4']")).click();
-		 driver.findElement(By.xpath("//*[@class='android.view.View' and @index='3']")).click();
-		 driver.findElement(By.xpath("//*[@class='android.view.View' and @index='1']")).click();
-		 driver.findElement(By.xpath("//*[@class='android.view.View' and @index='3']")).click();
-		 driver.findElement(By.xpath("//*[@class='android.view.View' and @index='4']")).click();
-		 driver.findElement(By.id("com.truecaller:id/call_button")).click();
-		 driver.findElement(By.id("com.android.dialer:id/floating_end_call_action_button")).click();
+	
+		 driver.findElement(By.id("com.samsung.android.contacts:id/two")).click();
+		 driver.findElement(By.id("com.samsung.android.contacts:id/six")).click();
+		 driver.findElement(By.id("com.samsung.android.contacts:id/seven")).click();
+		 driver.findElement(By.id("com.samsung.android.contacts:id/dialButton2")).click();
 		 driver.quit();
 	
 	

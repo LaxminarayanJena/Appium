@@ -11,7 +11,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class NativeElements {
+public class FiveNativeElementsAndIsElementPresent {
 
 	public static AndroidDriver<MobileElement> driver;
 	public static boolean isElementPresent(String id)
@@ -43,6 +43,7 @@ public class NativeElements {
 		 }
 		 driver.findElement(By.id("io.selendroid.testapp:id/my_text_field")).sendKeys("hello");
 		 driver.hideKeyboard();
+		 
 		 System.out.println(driver.findElements(By.className("android.widget.Button")).size());
 		 List<MobileElement>btn =driver.findElements(By.className("android.widget.Button"));
 		 for(MobileElement button :btn)
@@ -55,10 +56,10 @@ public class NativeElements {
 		 }
 		 
 		 driver.openNotifications();
-		 if(isElementPresent("android:id/icon"))
+		 if(isElementPresent("com.android.systemui:id/clear_all"))
 		 
 		 {
-			 driver.findElement(By.id("android:id/icon")).click();
+			 driver.findElement(By.id("com.android.systemui:id/clear_all")).click();
 		 }
 		 else
 		 {
