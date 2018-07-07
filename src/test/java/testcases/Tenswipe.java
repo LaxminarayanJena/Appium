@@ -31,6 +31,8 @@ public class Tenswipe {
 		 String text="Chrome";
          MobileElement ele=driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"android:id/content\")).scrollIntoView(new UiSelector().textContains(\""+text+"\"))");
 		 driver.swipe(ele.getLocation().x+376, ele.getLocation().y, ele.getLocation().x+127, ele.getLocation().y, 5000);
+		 //driver.swipe(startx, starty, endx, endy, duration);
+		 //settings-show pointer location
 		 driver.quit();
 		 
 	

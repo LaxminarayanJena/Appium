@@ -6,7 +6,7 @@ import javax.mail.internet.AddressException;
 import utility.TestConfig;
 import utility.monitoringMail;
 
-public class Mail {
+public class ThirteenMail {
 
 	public static void main(String[] args) throws AddressException, MessagingException {
 		monitoringMail mail= new monitoringMail();

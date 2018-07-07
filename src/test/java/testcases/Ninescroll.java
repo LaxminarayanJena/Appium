@@ -27,6 +27,9 @@ public class Ninescroll {
 		 String text="fire";
 		 driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"android:id/list\")).scrollIntoView(new UiSelector().textContains(\""+text+"\"))").click();
 		 
+		 
+		 
+		 
 		 driver.quit();
 		 
 	
