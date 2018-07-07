@@ -8,22 +8,24 @@ import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class scroll {
+public class Ninescroll {
 	public static AndroidDriver<MobileElement> driver;
 
 	public static void main(String[] args) throws MalformedURLException, InterruptedException {
 		
-		
+		                                             
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		
 		 capabilities.setCapability("deviceName", "Android");
-		 capabilities.setCapability("appPackage", "com.truecaller");
-		 capabilities.setCapability("appActivity", "com.truecaller.ui.ContactsActivity");
+		 capabilities.setCapability("appPackage", "com.samsung.android.contacts");
+		 capabilities.setCapability("appActivity", "com.android.dialer.DialtactsActivity");
 		 
 		 
 		 driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		 String text="gp";
-		 driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"com.truecaller:id/contacts_list\")).scrollIntoView(new UiSelector().textContains(\""+text+"\"))").click();
+		 String text1="CONTACTS";
+		 driver.findElementByAndroidUIAutomator("new UiSelector().textContains(\""+text1+"\")").click();
+		 String text="fire";
+		 driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"android:id/list\")).scrollIntoView(new UiSelector().textContains(\""+text+"\"))").click();
 		 
 		 driver.quit();
 		 
