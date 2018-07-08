@@ -3,13 +3,13 @@ package testNgLearning;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class validateButtonTest {
+public class TwovalidateButtonTest {
 
 	@Test(groups="high")
 	public void validateButton()
 	{
-		String expectedText="submit";
-		String actualText="ok";
+		String expectedText="ok";
+		String actualText="submit";
 		
 		/*if(expectedText.equals(actualText))
 		{

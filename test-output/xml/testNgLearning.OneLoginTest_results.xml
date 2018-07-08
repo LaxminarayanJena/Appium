@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LoginTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.031">
+  <properties />
+  
+  
+            <testcase name="doLogin" time="0.015" classname="testNgLearning.OneLoginTest" />
+                <testcase name="composeEmail" time="0.000" classname="testNgLearning.OneLoginTest" />
+                <testcase name="checkinbox" time="0.016" classname="testNgLearning.OneLoginTest" />
+      
+</testsuite>

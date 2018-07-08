@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="listeners.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="ValidateButtonTest(failed)">
+    <classes>
+      <class name="testNgLearning.TwovalidateButtonTest">
+        <methods>
+          <include name="validateButton"/>
+        </methods>
+      </class> <!-- testNgLearning.TwovalidateButtonTest -->
+    </classes>
+  </test> <!-- ValidateButtonTest(failed) -->
+  <test thread-count="5" name="TestDependencies(failed)">
+    <groups>
+      <run>
+        <include name="high"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNgLearning.ThreeTestDependencies">
+        <methods>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- testNgLearning.ThreeTestDependencies -->
+    </classes>
+  </test> <!-- TestDependencies(failed) -->
+</suite> <!-- Failed suite [Suite] -->

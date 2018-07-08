@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
-public class TestDependencies {
+public class ThreeTestDependencies {
 	
 @Test(priority=1, groups="med")
 	
@@ -19,6 +19,9 @@ public class TestDependencies {
 	public void composeEmail()
 	{
 	System.out.println("Composing Email");	
+	Assert.assertEquals("hi", "hello");
+	System.out.println("ending");
+	//above teststep will not execute after it fails. so we have to use soft assertion
 	}
 @Test(groups="high")
 public void isSkip()

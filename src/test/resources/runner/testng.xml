@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-    
-    <!-- <groups>
+   
+    <!--  
+    <groups>
         <run>
             <include name="high" />
+             <exclude name="med" />
         </run>
-    </groups> -->
+    </groups> 
+     
+      -->  
      
     
-     
-     
      <listeners>
         <listener class-name="listeners.CustomListeners"></listener>
-        <listener class-name="listeners.ExtentReporterNG"/>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-      
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="listeners.ExtentReporterNG"/>
     </listeners>
-    
+   
      
   <test name="LoginTest">
     <classes>
-      <class name="testNgLearning.LoginTest"/>
+      <class name="testNgLearning.OneLoginTest"/>
     </classes>
   </test> 
   
@@ -31,14 +32,22 @@
   
   <test name="ValidateButtonTest">
     <classes>
-      <class name="testNgLearning.validateButtonTest"/>
+      <class name="testNgLearning.TwovalidateButtonTest"/>
     </classes>
   </test> 
   
   
   <test name="TestDependencies">
+   <groups>
+        <run>
+            <include name="high" />
+        </run>
+    </groups> 
     <classes>
-      <class name="testNgLearning.TestDependencies"/>
+      <class name="testNgLearning.ThreeTestDependencies"/>
     </classes>
   </test> <!-- Test -->
+  
+  
+  
 </suite> <!-- Suite -->
