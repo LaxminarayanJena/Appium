@@ -80,3 +80,21 @@ public void checkinbox()
 System.out.println("3)---Checking inbox------");	
 }
 }
+
+/*
+BeforeSuite-This will execute before the Test Suite
+BeforeTest-This will execute before the Test
+BeforeClass-This will run before the first test method in the current class is invoked.
+BeforeMethod-This will execute before every Method
+1)---Executing login test----
+AfterMethod-This will execute after every Method
+BeforeMethod-This will execute before every Method
+2)---Composing Email-----
+AfterMethod-This will execute after every Method
+BeforeMethod-This will execute before every Method
+3)---Checking inbox------
+AfterMethod-This will execute after every Method
+AfterClass-This will  run after the last test method in the current class is invoked.
+AfterTest-This will 
+after the Test
+*/
