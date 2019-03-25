@@ -53,5 +53,6 @@ LinkText </br>
 Name -text</br>
 PartialLinkText </br>
 TagName </br>
-XPath- driver.findElementByXPath("//ClassName[@content-desc='content-desc']").click()
+XPath- driver.findElementByXPath("//ClassName[@content-desc='content-desc']").click() </br>
+ driver.findElementByXPath("//ClassName[@index='1']").click()
 
