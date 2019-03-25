@@ -50,7 +50,7 @@ ClassName -class </br>
 CssSelector </br>
 Id- ResourceId  </br>
 LinkText </br>
-Name </br>
+Name -text</br>
 PartialLinkText </br>
 TagName </br>
 XPath- driver.findElementByXPath("//ClassName[@content-desc='content-desc']").click()
