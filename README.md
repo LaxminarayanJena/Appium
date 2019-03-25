@@ -42,6 +42,6 @@ chrome://inspect/#devices
 # Appium Architecture
 ![appiumarchitecture](https://user-images.githubusercontent.com/24494133/43879019-8efea5be-9bbf-11e8-9264-dcef7e7fab1e.png)
 
-### AccessibilityId
-AndroidUIAutomator,ClassName,CssSelector,Id,LinkText,Name,PartialLinkText,TagName,Xpath
+### Locators
+AccessibilityId,AndroidUIAutomator,ClassName,CssSelector,Id,LinkText,Name,PartialLinkText,TagName,Xpath
 
