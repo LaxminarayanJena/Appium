@@ -43,5 +43,15 @@ chrome://inspect/#devices
 ![appiumarchitecture](https://user-images.githubusercontent.com/24494133/43879019-8efea5be-9bbf-11e8-9264-dcef7e7fab1e.png)
 
 ### Locators
-AccessibilityId,AndroidUIAutomator,ClassName,CssSelector,Id,LinkText,Name,PartialLinkText,TagName,Xpath
+AccessibilityId- content-desc </br>
+AndroidUIAutomator -text </br>
+driver.findElementByAndroidUIAutomator("new UiSelector().text(\"i accept adds\")").click() </br>
+ClassName -class </br>
+CssSelector </br>
+Id- ResourceId  </br>
+LinkText </br>
+Name </br>
+PartialLinkText </br>
+TagName </br>
+XPath- driver.findElementByXPath("//ClassName[@content-desc='content-desc']").click()
 
