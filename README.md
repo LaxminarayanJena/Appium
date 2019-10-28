@@ -24,7 +24,8 @@ dumpsys window windows | grep -E 'CurrentFocus'
 5)adb logcat>/Eclipse/logcat.txt 
 
 6)adb logcat --buffer=crash </br>
-7)adb logcat AndroidRuntime:E *:S
+7)adb logcat AndroidRuntime:E *:S </br>
+8)adb install -r TheAppName.apk
 
 --------------------------------------------
 
