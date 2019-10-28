@@ -21,7 +21,10 @@ dumpsys window windows | grep -E 'CurrentFocus'
 4)adb connect 192.168.0.101
 (*ip of wifi of mobile) 
 
+5)adb logcat>/Eclipse/logcat.txt 
 
+6)adb logcat --buffer=crash </br>
+7)adb logcat AndroidRuntime:E *:S
 
 --------------------------------------------
 
