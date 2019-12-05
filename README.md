@@ -3,10 +3,11 @@ Appium-selenium 3.0 API for Mobile Automation Testing
 
 ![appium](https://user-images.githubusercontent.com/24494133/42090141-d006b1c2-7bbd-11e8-9647-b751c9f7c986.png)
 
-### dec 2 2019 
-### Latest android version android 9.0 pie api level28
-older-android version android 8.1 oreo level 27 </br>
+### dec 6 2019 
+### Latest android version android 10.0 pie api level29
+older-android version android 9.0 pie level 28 </br>
 appium java client 7.3.0</br>
+selenium-3.14
 appium gui desktop-1.15 </br>
 Xcode -11.2.1 </br>
 latest version of iOS - iOS 13.2 </br>
