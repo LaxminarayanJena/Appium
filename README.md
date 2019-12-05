@@ -8,7 +8,7 @@ older-android version android 8.1 oreo level 27 </br>
 appium java client 7.3.0-dec 2 2019 </br>
 appium gui desktop-1.15 </br>
 Xcode -10 </br>
-latest version of iOS - iOS 12. </br>
+latest version of iOS - iOS 13.2. </br>
 # ADB Commands
 1)adb devices
 
