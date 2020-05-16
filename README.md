@@ -83,9 +83,9 @@ public void iOSScrollToElement() {
    public static void androidScroll1() {
 		Dimension dim = driver.manage().window().getSize();
 		int x = dim.getWidth() / 2;
-		int startY = (int) (dim.getHeight() * 0.8);
-		int endY = (int) (dim.getHeight() * 0.2);
-		
+		int startY = (int) (dim.getHeight() * 0.2);
+		int endY = (int) (dim.getHeight() * 0.8);
+		//downward scroll
 		TouchAction t = new TouchAction(driver);
 		t.press(PointOption.point(x, startY)).moveTo(PointOption.point(x, endY)).release().perform();
 }
