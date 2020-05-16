@@ -65,4 +65,36 @@ PartialLinkText </br>
 TagName </br>
 XPath- driver.findElementByXPath("//ClassName[@content-desc='content-desc']").click() </br>
  driver.findElementByXPath("//ClassName[@index='1']").click()
+```
+public void iOSScrollToElement() {
+		  RemoteWebElement element = (RemoteWebElement)driver.findElement(By.name("test-ADD TO CART"));
+		  String elementID = element.getId();
+		  HashMap<String, String> scrollObject = new HashMap<String, String>();
+		  scrollObject.put("element", elementID);
+//		  scrollObject.put("direction", "down");
+//		  scrollObject.put("predicateString", "label == 'ADD TO CART'");
+//		  scrollObject.put("name", "test-ADD TO CART");
+		  scrollObject.put("toVisible", "sdfnjksdnfkld");
+		  driver.executeScript("mobile:scroll", scrollObject);
+	  }
+``` 
+### Android ScrollAnd Swipe
+``` 
+   public static void androidScroll1() {
+		Dimension dim = driver.manage().window().getSize();
+		int x = dim.getWidth() / 2;
+		int startY = (int) (dim.getHeight() * 0.8);
+		int endY = (int) (dim.getHeight() * 0.2);
+		
+		TouchAction t = new TouchAction(driver);
+		t.press(PointOption.point(x, startY)).moveTo(PointOption.point(x, endY)).release().perform();
+}
+-----------------------------------------------------------
+public static void scrollUsingText(String visibleText) {
+		((FindsByAndroidUIAutomator<MobileElement>) driver).findElementByAndroidUIAutomator(
+				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
+						+ visibleText + "\").instance(0))");
+	}
 
+	}
+```
