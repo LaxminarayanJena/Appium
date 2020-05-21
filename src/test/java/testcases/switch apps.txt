@@ -1,9 +1,6 @@
  driver.startActivity(new Activity(settingsAppPackageName, settingsAppActivityName));
 
 
-
-
-
 For that you need to define two AppiumServer with different port, two AppiumDriver (one for sms app and another for another app).
 
 Start appium driver with 2 different port eg: 4723 and 4724. Define 2 drivers:
