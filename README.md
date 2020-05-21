@@ -98,3 +98,7 @@ public static void scrollUsingText(String visibleText) {
 
 	}
 ```
+Switch apps
+```
+ driver.startActivity(new Activity(settingsAppPackageName, settingsAppActivityName));
+```
