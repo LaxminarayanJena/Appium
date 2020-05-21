@@ -1,0 +1,45 @@
+ driver.startActivity(new Activity(settingsAppPackageName, settingsAppActivityName));
+
+
+
+
+
+For that you need to define two AppiumServer with different port, two AppiumDriver (one for sms app and another for another app).
+
+Start appium driver with 2 different port eg: 4723 and 4724. Define 2 drivers:
+
+public static AppiumDriver<MobileElement> driver1;
+public static AppiumDriver<MobileElement> smsDriver;
+Define DesiredCapabilities for both app and initialize both driver.
+
+First open and do Login.
+
+ public void startApp1(){
+  DesiredCapabilities cap1 = new DesiredCapabilities();
+  cap1.setCapability(MobileCapabilityType.NO_RESET, true);
+  cap1.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
+  cap1.setCapability(MobileCapabilityType.DEVICE_NAME, "android device");
+  cap1.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
+  cap1.setCapability("appPackage", "your app1 package name");
+  cap1.setCapability("appActivity", "your app1 package name");
+  cap1.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+
+  driver1 = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+}
+After that start sms and perform the action
+
+public void startApp2(){
+DesiredCapabilities cap2 = new DesiredCapabilities();
+cap2.setCapability(MobileCapabilityType.NO_RESET, true);
+cap2.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
+cap2.setCapability(MobileCapabilityType.DEVICE_NAME, "android device");
+cap2.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
+cap2.setCapability("appPackage", "your app1 package name");
+cap2.setCapability("appActivity", "your app1 package name");
+cap2.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+
+smsDriver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4724/wd/hub"), caps);
+}
+Now to switch from app1 to app2 you can use call startApp2 method. Now if you want to switch back again to switch to app1. Use:
+
+driver1.activateApp(appPackage of app1);
