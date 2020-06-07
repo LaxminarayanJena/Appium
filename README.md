@@ -55,7 +55,11 @@ chrome://inspect/#devices
 ### Locators
 -ios predicate string </br>
 -ios class chain </br>
--ios uiautomation </br>
+```
+let elem = app.cells.matchingPredicate(NSPredicate(format: "label CONTAINS 'Olivia'"))
+elem.click();
+
+```
 AccessibilityId- content-desc </br>
 AndroidUIAutomator -text </br>
 driver.findElementByAndroidUIAutomator("new UiSelector().text(\"i accept adds\")").click() </br>
