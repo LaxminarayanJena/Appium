@@ -58,6 +58,10 @@ chrome://inspect/#devices
 ```
 let elem = app.cells.matchingPredicate(NSPredicate(format: "label CONTAINS 'Olivia'"))
 elem.click();
+HashMap<String, String> scrollObject = new HashMap<String, String>();
+scrollObject.put("predicateString", "label == 'ADD TO CART'");
+
+driver.findElement(MobileBy.iOSClassChain(selector));
 
 ```
 AccessibilityId- content-desc </br>
