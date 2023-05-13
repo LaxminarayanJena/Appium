@@ -15,9 +15,12 @@ selenium-4.4.0 </br>
 appium gui desktop-1.22 </br>
 Xcode -14 </br>
 latest version of iOS - iOS 15.5 </br>
-latest mac Version macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4)
 latest mac Version macOS 13: Ventura  – June 6, 2022  </br>
-.ipa -ios file extension
+latest mac Version macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4) </br>
+
+.ipa -ios file extension </br>
+# crash logs
+settings-privacy-analytics and improvements-analyticsdata- filenam.ips
 # ADB Commands
 1)adb devices
 
