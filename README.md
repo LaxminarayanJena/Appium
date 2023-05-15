@@ -118,4 +118,53 @@ public static void scrollUsingText(String visibleText) {
 Switch apps
 ```
  driver.startActivity(new Activity(settingsAppPackageName, settingsAppActivityName));
+
+```
+Switch apps native to web and web to native
+```
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Set;
+
+public class AppToWebViewSwitchExample {
+    public static void main(String[] args) throws MalformedURLException {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platformName", "Android"); // Replace with "iOS" for iOS devices
+        // Set other desired capabilities
+
+        URL url = new URL("http://localhost:4723/wd/hub");
+        AppiumDriver<WebElement> driver = new AndroidDriver<>(url, caps); // Replace with IOSDriver for iOS devices
+
+        // Perform native app automation here
+
+        // Switch to the web view context
+        Set<String> contextHandles = driver.getContextHandles();
+        for (String contextHandle : contextHandles) {
+            if (contextHandle.startsWith("WEBVIEW")) {
+                driver.context(contextHandle);
+                break;
+            }
+        }
+
+        // Perform web automation here
+        // Example: Find and interact with a web element
+        WebElement element = driver.findElement(MobileBy.cssSelector("input[name='username']"));
+        element.sendKeys("example@gmail.com");
+
+        // Switch back to the native app context (optional)
+        driver.context("NATIVE_APP");
+
+        // Perform native app automation here again
+
+        // Quit the driver
+        driver.quit();
+    }
+}
+
 ```
