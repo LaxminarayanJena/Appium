@@ -120,7 +120,7 @@ Switch apps
  driver.startActivity(new Activity(settingsAppPackageName, settingsAppActivityName));
 
 ```
-Switch apps native to web and web to native
+### Switch apps native to web and web to native
 ```
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
