@@ -82,6 +82,23 @@ PartialLinkText </br>
 TagName </br>
 XPath- driver.findElementByXPath("//ClassName[@content-desc='content-desc']").click() </br>
  driver.findElementByXPath("//ClassName[@index='1']").click()
+ 
+ ```
+DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platformName", "iOS");
+        caps.setCapability("platformVersion", "14.5");
+        caps.setCapability("deviceName", "iPhone 12");
+        caps.setCapability("automationName", "XCUITest");
+        caps.setCapability("app", "/path/to/your/app.app");
+	caps.setCapability("udid", ""); //This capability represents the Unique Device Identifier (UDID) of the physical iOS device to be used for automation. You can find the UDID of your device in iTunes or by connecting it to Xcode.
+	
+	caps.setCapability("xcodeOrgId", "");//These capabilities are required when automating on real devices and are used for code signing. They correspond to your Apple Developer Team ID and the signing identity to use for the app, respectively.
+	
+	caps.setCapability("bundleId", "hh"); // specifies the bundle identifier of the application. This is required if you want to automate an installed application on a real device or simulator.
+
+        URL url = new URL("http://localhost:4723/wd/hub");
+        IOSDriver<IOSElement> driver = new IOSDriver<>(url, caps);
+``` 
 ```
 public void iOSScrollToElement() {
 		  RemoteWebElement element = (RemoteWebElement)driver.findElement(By.name("test-ADD TO CART"));
