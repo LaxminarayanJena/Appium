@@ -187,3 +187,37 @@ public class AppToWebViewSwitchExample {
 }
 
 ```
+### CRASH
+```
+To view crash logs in Android, you can use the following methods:
+
+Android Studio:
+
+Connect your Android device to your computer using a USB cable.
+Open Android Studio and select "Logcat" from the bottom panel.
+Filter the logcat output by selecting the device and the application you're interested in.
+You can view crash logs in the logcat window by looking for messages with "E/AndroidRuntime" or "FATAL EXCEPTION."
+ADB Command Line:
+
+Ensure that you have Android Debug Bridge (ADB) installed on your computer.
+Connect your Android device to your computer using a USB cable.
+Open a terminal or command prompt and navigate to the directory where ADB is installed.
+Run the command: adb logcat -b crash
+This command will display the crash logs for your connected device.
+Third-party Crash Reporting Tools:
+
+There are several third-party crash reporting tools available, such as Crashlytics (Fabric), Firebase Crashlytics, Bugsnag, and Sentry. These tools provide more advanced crash reporting features and can help you analyze crashes remotely.
+
+
+To view crash logs in iOS, you can follow these steps:
+
+settings-privacy-analytics and improvements-analyticsdata- filenam.ips
+Xcode:
+
+Connect your iOS device to your Mac using a USB cable.
+Open Xcode on your Mac.
+Select "Window" from the menu bar and then choose "Devices and Simulators."
+In the "Devices" tab, select your connected iOS device.
+Under the "Device Information" section, you will find a "View Device Logs" button. Click on it.
+This will open the Console app, where you can see various logs, including crash logs. Look for logs with the "Crash" or "Exception" type.
+```
