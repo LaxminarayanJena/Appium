@@ -81,9 +81,11 @@ Name -text</br>
 PartialLinkText </br>
 TagName </br>
 XPath- driver.findElementByXPath("//ClassName[@content-desc='content-desc']").click() </br>
- driver.findElementByXPath("//ClassName[@index='1']").click()
+ driver.findElementByXPath("//ClassName[@index='1']").click() </br>
  
- ``` ### IOS Capabilities
+ ### IOS Capabilities
+ 
+ ```
 DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "iOS");
         caps.setCapability("platformVersion", "14.5");
