@@ -62,3 +62,12 @@ select team and check provisioning profile and signing certificates filled
 clean build and sign in succeded
  ```
   idevice_id –list.
+  
+  ## UDID 
+
+- Rename the file extension of the IPA (iOS) or APP (macOS) file to .zip. </br>
+- Extract the contents of the ZIP file.  </br>
+- In the extracted files, navigate to the "Payload" folder.  </br>
+- Right-click on the app's bundle (usually ending with .app extension) and select "Show Package Contents."  </br>
+- Open the "Info.plist" file using a text editor.  </br>
+- Look for a key named "CFBundleIdentifier." The value next to this key is the Bundle ID of the app.  </br>
