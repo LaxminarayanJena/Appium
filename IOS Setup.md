@@ -31,7 +31,9 @@ npm install appium@1.7.2
 
 1.4.2. brew install ios-deploy -To deploy our apps to our devices by using ios-deploy.
 
-1.4.3. WebDriverAgent opens the apps when it is downloaded to the device. It is a WebDriver server application which let us control iOS devices remotely. We can integrate it with XCTest.framework and run the commands on the device. WebDriverAgent is developed at Facebook for end-to-end testing. In order to install it, we should to the below steps:
+1.4.3. brew install carthage -Decentralized dependency manager for Cocoa
+
+1.4.4. WebDriverAgent opens the apps when it is downloaded to the device. It is a WebDriver server application which let us control iOS devices remotely. We can integrate it with XCTest.framework and run the commands on the device. WebDriverAgent is developed at Facebook for end-to-end testing. In order to install it, we should to the below steps:
 
 Go to https://github.com/facebook/WebDriverAgent address and download the WebDriverAgent project to your MacBook. Double-click the file which has .zip extension and extract its content. Then open the terminal and execute below command:
 
