@@ -1,9 +1,28 @@
 
-# MSME Automation
+# IOS Setup
+https://www.swtestacademy.com/ios-testing-appium-java/
 
-This project is for automating UI, API for SSR and Prod
+### 1.1. Homebrew Installation
+```
+In order to install and update the required packages easily, we should install HomeBrew and enable it.
 
+/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
 
+brew -v command 
+```
+
+### 1.2. Node.js Installation
+```
+ brew install node
+ node -v 
+ ```
+ 
+ ### 1.3. Appium Installation
+```
+ npm install -g appium 
+npm install appium@1.7.2
+ appium -v
+ ```
 ## Tech Stack
 
 **Framework:** Cucumber With PageObject Model Design 
