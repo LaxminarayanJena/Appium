@@ -22,6 +22,7 @@ brew -v command
  npm install -g appium 
 npm install appium@1.7.2
  appium -v
+ appium -server started (0.0.0.0:4723)
  ```
 ## Tech Stack
 
