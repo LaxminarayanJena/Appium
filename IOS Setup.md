@@ -71,3 +71,19 @@ clean build and sign in succeded
 - Right-click on the app's bundle (usually ending with .app extension) and select "Show Package Contents."  </br>
 - Open the "Info.plist" file using a text editor.  </br>
 - Look for a key named "CFBundleIdentifier." The value next to this key is the Bundle ID of the app.  </br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
