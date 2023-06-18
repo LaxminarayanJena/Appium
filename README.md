@@ -24,9 +24,10 @@ settings-privacy-analytics and improvements-analyticsdata- filenam.ips
 # ADB Commands
 1)adb devices
 
-2)adb shell
+2)adb shell dumpsys window windows | grep -E 'mCurrentFocus' </br>
 
-dumpsys window windows | grep -E 'CurrentFocus'
+adb shell </br>
+dumpsys activity activities </br>
 
 3)adb tcpip 5555
 
@@ -220,4 +221,90 @@ Select "Window" from the menu bar and then choose "Devices and Simulators."
 In the "Devices" tab, select your connected iOS device.
 Under the "Device Information" section, you will find a "View Device Logs" button. Click on it.
 This will open the Console app, where you can see various logs, including crash logs. Look for logs with the "Crash" or "Exception" type.
+```
+
+### Non Functional TestCases
+```
+### Performance Testing:
+Measure the response time of the application when performing common tasks such as opening the app, navigating between screens, and loading data.
+Test the application's performance under different network conditions, such as 3G, 4G, and Wi-Fi.
+Check the application's memory usage and how it handles memory-intensive operations.
+
+### Usability Testing:
+Evaluate the user interface (UI) for consistency, clarity, and ease of use.
+Test the application's responsiveness to different screen sizes and orientations.
+Verify that the text, buttons, and other UI elements are appropriately sized and aligned for different devices.
+
+### Compatibility Testing:
+Test the application on various mobile devices with different operating systems (iOS, Android) and versions.
+Check if the application functions correctly on different screen resolutions and aspect ratios.
+Verify compatibility with different mobile browsers, if applicable.
+
+### Security Testing:
+Test the application for vulnerabilities such as data leakage, unauthorized access, or insecure data storage.
+Check if the application handles authentication and authorization properly.
+Test the application's resistance to common security threats, such as SQL injection or cross-site scripting (XSS).
+
+### Battery Consumption Testing:
+Measure the application's impact on device battery life by running it for a prolonged period.
+Test the application's behavior when the device's battery is low or in power-saving mode.
+Check if the application correctly handles battery-related events, such as entering or exiting battery-saving mode.
+
+### Localization Testing:
+Test the application with different languages and locales to ensure proper translation and formatting of text.
+Verify that the application supports date, time, and number formats specific to different regions.
+Check if the application's UI adapts to different languages without truncating or overlapping text.
+
+### Network Connectivity Testing:
+Test the application's behavior when the network connection is weak, intermittent, or lost.
+Verify that the application handles network errors gracefully and provides appropriate error messages.
+Test the application's offline capabilities, such as caching data for offline use and synchronizing when the connection is restored.
+
+```
+
+### Functional TestCases
+```
+### Installation and Launch:
+Verify that the application can be installed successfully from the app store or by side-loading.
+Test the application launch to ensure it opens without any errors or crashes.
+
+### User Registration and Authentication:
+Test the registration process to ensure users can create new accounts successfully.
+Verify that users can log in using valid credentials and are denied access with invalid credentials.
+Test the "Forgot Password" functionality to reset passwords and verify successful login after the reset.
+
+### User Interface (UI) and Navigation:
+Validate that the UI elements (buttons, menus, forms) are displayed correctly and are functional.
+Test the navigation between screens and ensure that users can navigate smoothly and without any glitches.
+Verify that all UI elements respond appropriately to user interactions (taps, swipes, etc.).
+
+### Input Validation:
+Test input fields to ensure that they accept valid data and reject invalid or incorrectly formatted data.
+Verify that appropriate error messages are displayed when invalid data is entered.
+Test the character limits and input constraints for various fields.
+ 
+### Functional Workflows:
+Test the main functionalities of the application, such as creating, editing, and deleting data (e.g., creating a new note, editing a contact, deleting a task).
+Validate that all workflows and business processes within the application are functioning as expected.
+
+### Integration with External Services:
+Test the integration of the application with external services, such as social media platforms, payment gateways, or third-party APIs.
+Verify that data is transmitted correctly and securely between the application and the external services.
+
+### Data Handling:
+Test data persistence and retrieval, ensuring that user data is saved and retrieved accurately.
+Validate that data is synchronized correctly between the device and any associated cloud services, if applicable.
+Test scenarios involving large amounts of data to ensure optimal performance and data integrity.
+
+### Push Notifications and Alerts:
+Test push notifications to ensure they are sent and received correctly on the device.
+Verify that alerts, notifications, and reminders within the application are displayed at the appropriate times and contain accurate information.
+
+### Compatibility:
+Test the application's compatibility with different mobile devices, operating systems, and versions.
+Validate that the application functions correctly on various screen sizes, resolutions, and orientations.
+
+### Localization:
+Test the application with different languages and locales to ensure proper translation and display of text.
+Verify that date, time, and number formats are displayed correctly based on the user's locale settings.
 ```
