@@ -65,7 +65,7 @@ public class CommonPage {
 
 ```
 
-
+```
 package com.example.utils;
 
 import io.appium.java_client.AppiumDriver;
@@ -111,6 +111,7 @@ public class DriverManager {
 }
 
 ```
+
 ```
 
 package com.example.stepdefs;
