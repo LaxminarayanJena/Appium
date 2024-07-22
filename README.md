@@ -13,14 +13,12 @@ latest mac Version </br>
 macOS 15 Sequoia, was announced on June 10, 2024 </br>
 macOS 14 Sonoma June 5, 2023  </br>
 Ventura  – June 6, 2022  </br>
-latest mac Version macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4) </br>
+macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4) </br>
 
-
+Android 15 is currently in beta and is scheduled for stable release in Fall 2024.</br>
+Android 14 is the most recent version of Android. It was released on October 4, 2023 </br>
 Android 13 - tiramisu August 15, 2022 </br>
 Android 12 -Snow cone 11 -October 4, 2021 </br>
-Android 11- red velvet cake September 8, 2020 </br>
-Android 10 10 - quince tart sept 3 2019  api level29 </br>
-Android 9 pie  august 6 2018 </br>
 
 .ipa -ios file extension </br>
 
