@@ -4,21 +4,26 @@ Appium-selenium 3.0 API for Mobile Automation Testing
 ![appium](https://user-images.githubusercontent.com/24494133/42090141-d006b1c2-7bbd-11e8-9647-b751c9f7c986.png)
 
 ### LATEST VERSION
+appium java client 9.2.3- July 22, 2024 </br>
+selenium-4.23.0 </br>
+appium gui desktop-1.22.3 </br>
+Xcode -15 </br>
+latest version of iOS - iOS 17 </br>
+latest mac Version </br>
+macOS 15 Sequoia, was announced on June 10, 2024 </br>
+macOS 14 Sonoma June 5, 2023  </br>
+Ventura  – June 6, 2022  </br>
+latest mac Version macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4) </br>
+
+
 Android 13 - tiramisu August 15, 2022 </br>
 Android 12 -Snow cone 11 -October 4, 2021 </br>
 Android 11- red velvet cake September 8, 2020 </br>
 Android 10 10 - quince tart sept 3 2019  api level29 </br>
 Android 9 pie  august 6 2018 </br>
 
-appium java client 8.2.0 - Aug 30, 2022 </br>
-selenium-4.4.0 </br>
-appium gui desktop-1.22 </br>
-Xcode -14 </br>
-latest version of iOS - iOS 15.5 </br>
-latest mac Version macOS 13: Ventura  – June 6, 2022  </br>
-latest mac Version macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4) </br>
-
 .ipa -ios file extension </br>
+
 # crash logs
 settings-privacy-analytics and improvements-analyticsdata- filenam.ips
 # ADB Commands
