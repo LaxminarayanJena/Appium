@@ -118,7 +118,7 @@ public void iOSScrollToElement() {
 		  driver.executeScript("mobile:scroll", scrollObject);
 	  }
 ``` 
-### Android ScrollAnd Swipe
+### Android ScrollAnd Swipe using touch action
 ``` 
    public static void androidScroll1() {
 		Dimension dim = driver.manage().window().getSize();
@@ -130,6 +130,21 @@ public void iOSScrollToElement() {
 		t.press(PointOption.point(x, startY)).moveTo(PointOption.point(x, endY)).release().perform();
 }
 -----------------------------------------------------------
+
+// Locate the start and end elements for the swipe
+        MobileElement startElement = driver.findElementById("start_element_id");
+        MobileElement endElement = driver.findElementById("end_element_id");
+
+        // Perform the swipe action
+        TouchAction touchAction = new TouchAction(driver);
+        touchAction.press(ElementOption.element(startElement))
+                   .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000)))
+                   .moveTo(ElementOption.element(endElement))
+                   .release()
+                   .perform();
+
+-----------------------------------------------------------
+
 public static void scrollUsingText(String visibleText) {
 		((FindsByAndroidUIAutomator<MobileElement>) driver).findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
