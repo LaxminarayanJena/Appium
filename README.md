@@ -4,18 +4,18 @@ Appium-selenium 3.0 API for Mobile Automation Testing
 ![appium](https://user-images.githubusercontent.com/24494133/42090141-d006b1c2-7bbd-11e8-9647-b751c9f7c986.png)
 
 ### LATEST VERSION
-appium java client 9.2.3- July 22, 2024 </br>
-selenium-4.23.0 </br>
-appium gui desktop-1.22.3 </br>
-Xcode -15 </br>
-latest version of iOS - iOS 17 </br>
+appium java client 9.4.0- Jan 21, 2025 </br>
+selenium-4.32.0  May 03, 2025 </br>
+appium gui desktop-1.22.3 deprciated  </br>
+Xcode -16.3 September 16, 2024 </br>
+latest version of iOS - iOS 18.5 may 12 2025 </br>
 latest mac Version </br>
-macOS 15 Sequoia, was announced on June 10, 2024 </br>
+macOS 15 Sequoia September 16, 2024 </br>
 macOS 14 Sonoma June 5, 2023  </br>
 Ventura  – June 6, 2022  </br>
 macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4) </br>
 
-Android 15 is currently in beta and is scheduled for stable release in Fall 2024.</br>
+Android 15 September 3, 2024..</br>
 Android 14 is the most recent version of Android. It was released on October 4, 2023 </br>
 Android 13 - tiramisu August 15, 2022 </br>
 Android 12 -Snow cone 11 -October 4, 2021 </br>
