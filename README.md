@@ -4,23 +4,26 @@ Appium-selenium 3.0 API for Mobile Automation Testing
 ![appium](https://user-images.githubusercontent.com/24494133/42090141-d006b1c2-7bbd-11e8-9647-b751c9f7c986.png)
 
 ### LATEST VERSION
-appium java client 9.4.0- Jan 21, 2025 </br>
-selenium-4.32.0  May 03, 2025 </br>
-appium gui desktop-1.22.3 deprciated  </br>
+appium java client 10.0.0- Aug 13, 2025 </br>
+selenium-4.41.0  feb 20, 2026 </br>
+appium gui desktop-1.22.3 deprciated appium 3  </br> 
 Xcode -16.3 September 16, 2024 </br>
-latest version of iOS - iOS 18.5 may 12 2025 </br>
+latest version of iOS - iOS 26.3 feb 11 2026 </br>
 latest mac Version </br>
-macOS 15 Sequoia September 16, 2024 </br>
-macOS 14 Sonoma June 5, 2023  </br>
-Ventura  – June 6, 2022  </br>
-macOS 12: Monterey (Star) – October 25, 2021 (Latest: 12.4) </br>
+macOS 26 Tahoe September 16, 2025 </br>
+macOS 15 Sequoia </br>
 
-Android 15 September 3, 2024..</br>
+Android 16 feb, 2025..</br>
 Android 14 is the most recent version of Android. It was released on October 4, 2023 </br>
-Android 13 - tiramisu August 15, 2022 </br>
-Android 12 -Snow cone 11 -October 4, 2021 </br>
 
+
+Yes, during migration from Appium 1.x to 2.x, TouchAction was deprecated and replaced by W3C Actions API. The findElementBy* methods were removed and we had to use standard By locators. JSON Wire Protocol support was dropped, enforcing strict W3C compliance. Also, drivers are no longer bundled and must be installed separately.
+
+```
+PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+Sequence tap = new Sequence(finger, 1);
 .ipa -ios file extension </br>
+```
 
 # crash logs
 settings-privacy-analytics and improvements-analyticsdata- filenam.ips
